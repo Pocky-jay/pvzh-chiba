@@ -40,15 +40,6 @@ title: 卡牌改动
 
 </details>
 
-### 环境
-
-<details>
-<summary>环境改动（待定稿后填入）</summary>
-
-暂无内容。
-
-</details>
-
 ## 说明
 
 - 改动的最终版本以游戏内实际效果为准。
