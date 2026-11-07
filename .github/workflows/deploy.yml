@@ -31,6 +31,9 @@ jobs:
           BASE_PATH: /${{ github.event.repository.name }}/
         run: npm run docs:build
       - uses: actions/configure-pages@v5
+        with:
+          # 首次运行时自动开启 Pages（需要仓库管理员权限）
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs/.vitepress/dist
