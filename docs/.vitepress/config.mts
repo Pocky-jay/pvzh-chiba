@@ -1,13 +1,16 @@
 import { defineConfig } from 'vitepress'
 
+const base = process.env.BASE_PATH || '/'
+
 export default defineConfig({
   lang: 'zh-CN',
+  base,
   title: 'PVZH千叶重铸版',
   description: 'PVZH千叶重铸版介绍、改动说明、安装教程与相关问题解答。',
   appearance: 'dark',
 
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: `${base}logo.svg` }],
     ['meta', { name: 'theme-color', content: '#0a1210' }]
   ],
 
