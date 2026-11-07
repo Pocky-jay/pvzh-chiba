@@ -1,5 +1,6 @@
 ---
 layout: home
+sidebar: false
 
 hero:
   name: PVZH千叶重铸版
