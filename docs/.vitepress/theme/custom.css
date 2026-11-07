@@ -1,0 +1,152 @@
+/**
+ * 千叶重铸版 · 主题定制
+ * 深色游戏风 + 绿色强调。不引入任何外部字体。
+ */
+
+/* ---------- 品牌色 ---------- */
+:root {
+  --vp-c-brand-1: #1f9e5c;
+  --vp-c-brand-2: #29a866;
+  --vp-c-brand-3: #2fae6b;
+  --vp-c-brand-soft: rgba(31, 158, 92, 0.14);
+
+  --vp-c-tip-1: var(--vp-c-brand-1);
+  --vp-c-tip-2: var(--vp-c-brand-2);
+  --vp-c-tip-3: var(--vp-c-brand-3);
+  --vp-c-tip-soft: var(--vp-c-brand-soft);
+
+  /* 首页标题渐变 */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(
+    120deg,
+    #b6f36b 0%,
+    #5fd48a 45%,
+    #1f9e5c 100%
+  );
+  --vp-home-hero-image-background-image: linear-gradient(
+    135deg,
+    rgba(182, 243, 107, 0.28),
+    rgba(31, 158, 92, 0.06)
+  );
+  --vp-home-hero-image-filter: blur(56px);
+}
+
+/* ---------- 深色底 ---------- */
+.dark {
+  --vp-c-brand-1: #b6f36b;
+  --vp-c-brand-2: #8ce87a;
+  --vp-c-brand-3: #2fae6b;
+  --vp-c-brand-soft: rgba(182, 243, 107, 0.14);
+
+  --vp-c-bg: #0a1210;
+  --vp-c-bg-alt: #0e1815;
+  --vp-c-bg-elv: #121e19;
+  --vp-c-bg-soft: #121e19;
+
+  --vp-c-border: #24352c;
+  --vp-c-divider: #1c2a24;
+  --vp-c-gutter: #0a1210;
+
+  --vp-c-text-1: #e6f2ea;
+  --vp-c-text-2: #a9c2b3;
+  --vp-c-text-3: #759084;
+
+  --vp-code-block-bg: #0d1713;
+  --vp-code-tab-bg: #0d1713;
+  --vp-code-copy-code-bg: #16241d;
+
+  /* 主按钮：亮绿底 + 深色字 */
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: #07130c;
+  --vp-button-brand-bg: #2fae6b;
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: #07130c;
+  --vp-button-brand-hover-bg: #3cc07c;
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: #07130c;
+  --vp-button-brand-active-bg: #b6f36b;
+}
+
+/* ---------- 导航 ---------- */
+.VPNavBar .title {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+/* ---------- 首页特性卡 ---------- */
+.VPFeature {
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.VPFeature.link:hover {
+  transform: translateY(-2px);
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
+}
+
+/* ---------- 正文表格 ---------- */
+.vp-doc table {
+  font-size: 14px;
+}
+
+.vp-doc th {
+  background: var(--vp-c-bg-soft);
+  font-weight: 600;
+}
+
+.vp-doc tr:hover td {
+  background: var(--vp-c-bg-soft);
+}
+
+/* ---------- 图片 ---------- */
+.vp-doc img {
+  border-radius: 10px;
+  border: 1px solid var(--vp-c-divider);
+}
+
+/* ---------- 引用块 ---------- */
+.vp-doc blockquote {
+  border-left-color: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+  border-radius: 0 10px 10px 0;
+  padding: 10px 16px;
+}
+
+/* ---------- 折叠块 ---------- */
+.vp-doc details {
+  margin: 16px 0;
+  padding: 6px 16px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+  background: var(--vp-c-bg-soft);
+}
+
+.vp-doc details summary {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 6px 0;
+}
+
+/* ---------- 自定义提示条 ---------- */
+.status-banner {
+  margin: 28px 0 8px;
+  padding: 16px 20px;
+  border: 1px solid var(--vp-c-divider);
+  border-left: 3px solid var(--vp-c-brand-1);
+  border-radius: 12px;
+  background: linear-gradient(180deg, var(--vp-c-bg-soft), transparent);
+}
+
+.status-banner__title {
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--vp-c-brand-1);
+}
+
+.status-banner p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--vp-c-text-2);
+}
